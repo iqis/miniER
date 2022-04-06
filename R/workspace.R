@@ -73,8 +73,9 @@ register.miniER.relationship <- function(item, ...){
 
   new_entry <- expand_relationship(item)
 
-  updated_register <- dplyr::bind_rows(existing_register,
-                                       new_entry)
+  updated_register <- existing_register %>%
+    dplyr::bind_rows(new_entry) %>%
+    dplyr::distinct()
 
   assign(attr(item, "relationship_type_name"),
          updated_register,
