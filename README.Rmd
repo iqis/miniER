@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # miniER
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/iqis/miniER/workflows/R-CMD-check/badge.svg)](https://github.com/iqis/miniER/actions)
 <!-- badges: end -->
 
 miniER is a language that employs simplified version of the entity-relationship model to describe data with legal R syntax. 
